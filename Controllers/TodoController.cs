@@ -27,7 +27,7 @@ namespace GF_TodoApp.Controllers
             return Ok(_mapper.Map<IEnumerable<TodoResponseDto>>(todos));
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpGet("{id}", Name = "GetById")]
         public async Task<IActionResult> GetTodo(int id)
         {
