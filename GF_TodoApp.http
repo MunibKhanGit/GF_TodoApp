@@ -1,0 +1,6 @@
+@GF_TodoApp_HostAddress = http://localhost:5030
+
+GET {{GF_TodoApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
